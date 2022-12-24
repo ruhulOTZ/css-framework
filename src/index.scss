@@ -1,15 +1,49 @@
-// this file is only for testing, we'll remove it later
+// Variables & Functions
+@import "./otzCss/variables";
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+// Base & Layout
+@import "./otzCss/base";
+
+// Colors
+
+// Components (Button, card, navbar)
+@import "./otzCss/components/card";
+
+// Utilities (Margin, Padding, Opacity)
+
+h1 {
+  color: $primary;
+  font-size: $font-size-sm;
+  margin-bottom: $base-margin;
 }
+a {
+  color: $secondary;
+}
+button {
+  color: white;
+  border: 0;
+  background: $primary;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  border-radius: $base-border-radius;
+  padding: $base-padding;
+}
+.error {
+  color: $error;
+  border-color: $error;
+  border-style: solid;
+
+  margin: $base-margin;
+  padding: $base-padding;
+  border-radius: $base-border-radius;
+  border-width: $base-border-thickness;
+}
+.notification {
+  color: $secondary;
+  border-color: $secondary;
+  border-style: solid;
+
+  margin: $base-margin;
+  padding: $base-padding;
+  border-radius: $base-border-radius;
+  border-width: $base-border-thickness;
 }
