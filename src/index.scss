@@ -5,6 +5,7 @@
 @import "./otzCss/base";
 
 // Colors
+@import "./otzCss/colors";
 
 // Components (Button, card, navbar)
 @import "./otzCss/components/card";
@@ -13,7 +14,7 @@
 
 h1 {
   color: $primary;
-  font-size: $font-size-sm;
+  font-size: $font-size-xxl;
   margin-bottom: $base-margin;
 }
 a {
