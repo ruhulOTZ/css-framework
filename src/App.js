@@ -1,48 +1,65 @@
-import React, { useEffect, useState } from "react";
-import './App.scss';
-// Import scss file
-//import './App.scss';
+function App() {
+  return (
+    <div>
+    {/* <!-- colors --> */}
+    <h2>Colors</h2>
+    <span class="text-primary">primary text</span> | 
+    <span class="text-secondary">secondary text</span> | 
+    <span class="text-error">error text</span> | 
+    <span class="text-info">info text</span> | 
+    <span class="text-blue">blue text</span> | 
+    <span class="text-red">red text</span> |
+    <span class="text-green">green text</span> | 
+    <span class="text-yellow">yellow text</span> | 
+    <span class="text-purple">purple text</span> | 
+    <span class="text-orange">orange text</span> | 
+    <span class="text-gray">gray text</span>
 
-export default function App() {
-const [darkTheme, setDarkTheme] = useState(false);
+    <br /><br />
 
-// React useEffect hook that will fire up
-// when "darkTheme" changes
-useEffect(() => {
-	// Accessing scss variable "--background-color"
-	// and "--text-color" using plain JavaScript
-	// and changing the same according to the state of "darkTheme"
-	const root = document.documentElement;
-	root?.style.setProperty(
-	"--background-color",
-	darkTheme ? "#262833" : "#fff"
-	);
-	root?.style.setProperty("--text-color", darkTheme ? "#fff" : "#262833");
-}, [darkTheme]);
+    <span class="bg-primary text-white">bg primary</span> |
+    <span class="bg-secondary text-white">bg secondary</span> |
+    <span class="bg-error text-white">bg error</span> |
+    <span class="bg-info text-white">bg info</span> |
+    <span class="bg-blue text-white">bg blue</span> |
+    <span class="bg-red text-white">bg red</span> |
+    <span class="bg-green text-white">bg green</span> |
+    <span class="bg-yellow text-white">bg yellow</span> |
+    <span class="bg-purple text-white">bg purple</span> |
+    <span class="bg-orange text-white">bg orange</span> |
+    <span class="bg-gray text-white">bg gray</span> |
 
-const URL =
-	"https://media.geeksforgeeks.org/" +
-	"wp-content/uploads/20190918121833/geeksforgeeks-62.png";
+    <br /><br />
 
-return (
-	<>
-	<div className="card">
-		<img className="image" src={URL} alt="geeksforgeeks" />
-		<div className="cardBody">
-		<h2>Dynamically changing scss variable using react </h2>
+    <span class="bg-primary-dark-8 text-white">primary dark 8</span> |
+    <span class="bg-primary-dark-6 text-white">primary dark 6</span> |
+    <span class="bg-primary-dark-4 text-white">primary dark 4</span> |
+    <span class="bg-primary-dark-2 text-white">primary dark 2</span> |
+    <span class="bg-primary text-white">primary</span> |
+    <span class="bg-primary-light-2 text-white">primary light 2</span> |
+    <span class="bg-primary-light-4 text-white">primary light 4</span> |
+    <span class="bg-primary-light-6 text-white">primary light 6</span> |
+    <span class="bg-primary-light-8 text-white">primary light 8</span> |
 
-		<p>
-			{" "}
-			According to Wikipedia sass is a preprocessor
-			scripting language that is interpreted or compiled
-			into Cascading Style Sheets (CSS).
-		</p>
+    <br /><br />
+    <a href="#" class="text-primary text-hover-orange-light-1">hover me</a>
+    {/* <!-- font sizes --> */}
 
-		<button onClick={() => setDarkTheme(!darkTheme)}>
-			{darkTheme ? "light" : "dark"}
-		</button>
-		</div>
-	</div>
-	</>
-);
+    {/* <!-- buttons --> */}
+
+    {/* <!-- cards --> */}
+    <h2>Cards</h2>
+    <div class="card">
+      <h1 class="card-title">This is a title</h1>
+      <p class="card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In sunt, quo totam aliquam praesentium ducimus tempore sapiente quia nulla optio? Lorem ipsum, dolor sit amet consectetur <a href="">adipisicing elit</a>. Libero laboriosam laborum exercitationem autem commodi voluptas odio aliquid ut velit doloremque minima, quaerat dolores, corporis consequuntur totam nam id veniam maxime.</p>
+    </div>
+
+    {/* <!-- grid system --> */}
+
+    {/* <!-- utilities --> */}
+
+  </div>
+  );
 }
+
+export default App;
