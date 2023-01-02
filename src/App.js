@@ -1,13 +1,28 @@
+/* eslint-disable guard-for-in */
+/* eslint-disable no-restricted-syntax */
+/* eslint-disable camelcase */
+/* eslint-disable no-unused-expressions */
+/* eslint-disable prettier/prettier */
+import { useEffect } from 'react';
 import Navbar from './components/navbar/Navbar';
 import Settings from './components/settings/Settings';
+import { colorPaletteV2 } from './dummy-data/color';
 
-/* eslint-disable jsx-a11y/anchor-is-valid */
+
 function App() {
+    useEffect(() => {
+
+        for (const color in colorPaletteV2){
+            document.documentElement.style.setProperty(`--${color}`, colorPaletteV2[color])
+        }
+        
+    }, []);
+
     return (
-        <>
+        <div style={{    padding: '20px', background: 'lavender'}}>
             <Navbar />
             <Settings />
-        </>
+        </div>
     );
 }
 

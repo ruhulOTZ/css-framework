@@ -28,6 +28,12 @@ function Settings() {
                     event.target.value
                 );
                 break;
+            case 'searchPlaceholder':
+                document.documentElement.style.setProperty(
+                    '--tb-search-placeholder',
+                    event.target.value
+                );
+                break;
             case 'iconColor':
                 document.documentElement.style.setProperty('--tb-icon-color', event.target.value);
                 break;
@@ -50,10 +56,10 @@ function Settings() {
                 );
                 break;
             case 'badgeColor':
-                document.documentElement.style.setProperty('--tb-badge-bg', event.target.value);
+                document.documentElement.style.setProperty('--tb-badge-text', event.target.value);
                 break;
             case 'badgeBg':
-                document.documentElement.style.setProperty('--tb-badge-text', event.target.value);
+                document.documentElement.style.setProperty('--tb-badge-bg', event.target.value);
                 break;
 
             default:

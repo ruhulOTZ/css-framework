@@ -7,11 +7,17 @@ import RightSide from './RightSide';
 
 function Navbar() {
     return (
-        <nav className={Styles.navbarWrapper}>
-            <LeftSide />
+        <header className={Styles.header}>
+            <div className={Styles.topText}>
+                Top Bar Color Management
+            </div>
+            <nav className={Styles.navbarWrapper}>
+                <LeftSide />
 
-            <RightSide />
-        </nav>
+                <RightSide />
+            </nav>
+        </header>
+
     );
 }
 

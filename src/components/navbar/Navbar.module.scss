@@ -1,9 +1,17 @@
 @import '../../assets/scss/base/variables';
 
-.navbarWrapper {
-  color: $tb-text-color;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 10%;
-  background-color: $tb-bg-color;
+.header {
+  .topText {
+    color: $white-color;
+    background-color: $black-color;
+    padding: 5px 10%;
+    text-align: center;
+  }
+  .navbarWrapper {
+    color: $tb-text-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10%;
+    background-color: $tb-bg-color;
+  }
 }
