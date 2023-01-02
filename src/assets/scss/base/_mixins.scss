@@ -1,0 +1,11 @@
+// SCSS SYNTAX
+@mixin rsIcon($bgColor: DarkGray) {
+  background-color: $bgColor;
+  padding: 5px;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}

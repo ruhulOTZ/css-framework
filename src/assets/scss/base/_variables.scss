@@ -1,32 +1,73 @@
-$bg-red: #FF264A;
-$bg-white: #fff;
-$bg-black: #000000;
-$lightPaste: 68EBCA;
+:root {
+  /* top bar code */
+  --tb-bg-color: #000000;
+  --tb-text-color: #fff;
+  --tb-toggle-color: #3c7ef3;
+
+  --tb-search-background: #fff;
+  --tb-search-border: #000000;
+  --tb-search-text: #000000;
+  --tb-search-placeholder: gray;
+  --tb-search-icon: gray;
+
+  --tb-icon-color: #fff;
+  --tb-icon-background-color: #ff264a;
+  --tb-icon-hover-icon-color: #c2c2c2;
+  --tb-icon-hover-background-color: #a30e27;
+
+  --tb-badge-bg: #fff;
+  --tb-badge-text: #000000;
+}
+
+$white-color: #fff;
+$black-color: #000;
+$red-color: #ff264a;
+
+// Top bar variable
+
+$tb-bg-color: var(--tb-bg-color);
+$tb-text-color: var(--tb-text-color);
+
+$tb-toggle-color: var(--tb-toggle-color);
+
+$tb-search-border: var(--tb-search-border);
+$tb-search-background: var(--tb-search-background);
+$tb-search-text: var(--tb-search-text);
+$tb-search-placeholder: var(--tb-search-placeholder);
+$tb-search-icon: var(--tb-search-icon);
+
+$tb-icon-color: var(--tb-icon-color);
+$tb-icon-background-color: var(--tb-icon-background-color);
+$tb-icon-hover-icon-color: var(--tb-icon-hover-icon-color);
+$tb-icon-hover-background-color: var(--tb-icon-hover-background-color);
+
+$tb-badge-bg: var(--tb-badge-bg);
+$tb-badge-text: var(--tb-badge-text);
+
+// End
+
+$lightPaste: #68ebca;
 $base-font-family: Poppins;
 $fbp-text-secondary: #546376;
-$text-light-blue:#3c7ef3;
+$text-light-blue: #3c7ef3;
 $text-dark-blue: #133159;
-$text-dark-blue-50: #1331597F;
+$text-dark-blue-50: #1331597f;
 $text-dark-blue-65: #133159a6;
 $text-blue-accent: #006df580;
-$download-border: #E5E8EF;
+$download-border: #e5e8ef;
 $active-card-label: #9e9e9e;
 $use-history-border: #c1c1c180;
 $border-light-gray: #d5cbff;
-$button-light-blue: #2F80ED;
+$button-light-blue: #2f80ed;
 $table-thead-bg: #71758e14;
-$scrollbar-box-shadow: #0000004C;
-$progressBarBg : #3c7ef31a;
-
-
-
-
+$scrollbar-box-shadow: #0000004c;
+$progressBarBg: #3c7ef31a;
 
 $fbp-heading-image-width: 100%;
 $fbp-heading-image-height: 240px;
 $fbp-heading-image-border-radius: 12px;
 $pbp-fot: 16px;
-$fieldSpacing:20px;
+$fieldSpacing: 20px;
 $innerGap: 80px;
 $fbp-mmm: linear-gradient(180deg, #f4f4f4 6.87%, #ffffff 90.67%);
 $fbp-border-radius-small: 4px;

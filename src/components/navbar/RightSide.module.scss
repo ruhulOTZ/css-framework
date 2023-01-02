@@ -1,0 +1,81 @@
+@import '../../assets/scss/base/variables';
+@import '../../assets/scss/base/mixins';
+
+.rightSideWrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  .searchInput {
+    color: $tb-search-text;
+    background-color: $tb-search-background;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid $tb-search-border;
+
+    &::placeholder {
+      color: $tb-search-placeholder;
+    }
+  }
+
+  .callIcon {
+    svg {
+      fill: $tb-icon-color;
+      path {
+        fill: $tb-icon-color;
+      }
+    }
+
+    @include rsIcon($tb-icon-background-color);
+    &:hover {
+      background-color: $tb-icon-hover-background-color;
+
+      svg {
+        fill: $tb-icon-hover-icon-color;
+        path {
+          fill: $tb-icon-hover-icon-color;
+        }
+      }
+    }
+  }
+  .addIcon {
+    @include rsIcon($tb-icon-background-color);
+    &:hover {
+      background-color: $tb-icon-hover-background-color;
+    }
+  }
+  .notificationIcon {
+    @include rsIcon($tb-icon-background-color);
+    &:hover {
+      background-color: $tb-icon-hover-background-color;
+    }
+  }
+
+  .creditWrapper {
+    .dollar {
+      color: $tb-badge-bg;
+    }
+    .badge {
+      color: $tb-badge-text;
+      background-color: $tb-badge-bg;
+      padding: 2px 5px;
+      border-radius: 5px;
+      margin-left: 5px;
+    }
+  }
+
+  .profileWrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    .userAvatar {
+      width: 38px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .userInfo {
+      color: $tb-text-color;
+    }
+  }
+}

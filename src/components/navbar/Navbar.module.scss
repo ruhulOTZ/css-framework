@@ -1,0 +1,9 @@
+@import '../../assets/scss/base/variables';
+
+.navbarWrapper {
+  color: $tb-text-color;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10%;
+  background-color: $tb-bg-color;
+}

@@ -1,0 +1,13 @@
+@import '../../assets/scss/base/variables';
+
+.leftSideWrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  a {
+    display: inline-flex;
+  }
+  .navbarToggle {
+    fill: $tb-toggle-color;
+  }
+}
