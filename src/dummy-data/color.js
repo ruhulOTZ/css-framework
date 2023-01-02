@@ -1,5 +1,5 @@
 /* eslint-disable import/prefer-default-export */
-export const colorPallate = {
+export const colorPalette = {
     top_bar: {
         backgroud_color: 'blue',
         top_bar_text_color: '',

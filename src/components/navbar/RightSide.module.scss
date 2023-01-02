@@ -64,6 +64,10 @@
 
     .userInfo {
       color: $tb-text-color;
+
+      h3 {
+        margin-block: 5px;
+      }
     }
   }
 }
