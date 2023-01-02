@@ -1,7 +1,12 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import Styles from './DynamicColor.module.scss';
 
 function DynamicColor() {
+    const handleNavbarBg = e => {
+        console.log(e.target.value);
+    };
+
     return (
         <div className={Styles.dynamicColorWrapper}>
             <div className={Styles.dynamicColorContent}>
@@ -9,7 +14,7 @@ function DynamicColor() {
                 <div className={Styles.dynamicColorItems}>
                     <div className={Styles.dynamicColorItem}>
                         <span>NavBG</span>
-                        <input type="color" />
+                        <input type="color" onChange={e => handleNavbarBg} />
                     </div>
 
                     <div className={Styles.dynamicColorItem}>

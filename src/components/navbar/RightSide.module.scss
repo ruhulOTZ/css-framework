@@ -38,18 +38,6 @@
       }
     }
   }
-  .addIcon {
-    @include rsIcon($tb-icon-background-color);
-    &:hover {
-      background-color: $tb-icon-hover-background-color;
-    }
-  }
-  .notificationIcon {
-    @include rsIcon($tb-icon-background-color);
-    &:hover {
-      background-color: $tb-icon-hover-background-color;
-    }
-  }
 
   .creditWrapper {
     .dollar {
