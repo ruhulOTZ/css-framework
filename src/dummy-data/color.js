@@ -91,4 +91,29 @@ export const colorPaletteV2 = {
     'sb-menu-active-text': '#000',
     'sb-menu-active-icon': '#000',
     'sb-menu-active-bg': '#ff264a',
+    // Button
+    'btn-text': '#000',
+    'btn-background': '#0025db',
+    'btn-border': '#000',
+    'btn-hover-text': '#000',
+    'btn-hover-background': '#ff002b',
+    'btn-hover-border': '#fff',
+    // Input
+    'inp-text': '#0025db',
+    'inp-background': '#d8d8d8',
+    'inp-border': '#000',
+    'inp-placeholder': '#ff002b',
+    'inp-icon': '#ff002b',
+    // Tabs
+    'tab-wb-text': '#000000',
+    'tab-wb-background': '#ffffff',
+    'tab-wb-active-text': '#ffffff',
+    'tab-wb-active-background': '#ff264a',
+    'tab-wub-text': '#0025db',
+    'tab-wub-active-text': '#ff264a',
+    // General
+    // 'main-background-color': 'green',
+    // 'scroll-color': 'red',
+    // 'primary-text-color': 'gold',
+    // 'secondary-text-color': 'pink',
 };

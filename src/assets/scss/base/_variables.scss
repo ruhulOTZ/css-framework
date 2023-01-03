@@ -3,18 +3,15 @@
   --tb-bg-color: #000000;
   --tb-text-color: #fff;
   --tb-toggle-color: #3c7ef3;
-
   --tb-search-background: #fff;
   --tb-search-border: #000000;
   --tb-search-text: #000000;
   --tb-search-placeholder: gray;
   --tb-search-icon: gray;
-
   --tb-icon-color: #fff;
   --tb-icon-background-color: #ff264a;
   --tb-icon-hover-icon-color: #c2c2c2;
   --tb-icon-hover-background-color: #a30e27;
-
   --tb-badge-bg: #fff;
   --tb-badge-text: #000000;
 
@@ -25,10 +22,68 @@
   --sb-menu-active-text: #000;
   --sb-menu-active-icon: #000;
   --sb-menu-active-bg: #ff264a;
+
+  // Buttons
+  --btn-text: #fff;
+  --btn-background: #0025db;
+  --btn-border: #000;
+  --btn-hover-text: #000;
+  --btn-hover-background: #ff002b;
+  --btn-hover-border: #fff;
+
+  // Input
+  --inp-text: #0025db;
+  --inp-background: #d8d8d8;
+  --inp-border: #000;
+  --inp-placeholder: #ff264a;
+  --inp-icon: #ff264a;
+
+  // Tabs
+  --tab-wb-text: #000000;
+  --tab-wb-background: #ffffff;
+  --tab-wb-active-text: #ffffff;
+  --tab-wb-active-background: #ff264a;
+  --tab-wub-text: #0025db;
+  --tab-wub-active-text: #ff264a;
+
+  // General
+  --main-background-color: #e6e6fa;
+  --scroll-color: #0025db;
+  --primary-text-color: #00000;
+  --secondary-text-color: #ff264a;
+  // --accent-color:,
 }
 
-// Side bar variable
+// General
+$main-background-color: var(--main-background-color);
+$scroll-color: var(--scroll-color);
+$primary-text-color: var(--primary-text-color);
+$secondary-text-color: var(--secondary-text-color);
 
+// Tabs
+$tab-wb-text: var(--tab-wb-text);
+$tab-wb-background: var(--tab-wb-background);
+$tab-wb-active-text: var(--tab-wb-active-text);
+$tab-wb-active-background: var(--tab-wb-active-background);
+$tab-wub-text: var(--tab-wub-text);
+$tab-wub-active-text: var(--tab-wub-active-text);
+
+// input Variable
+$inp-text: var(--inp-text);
+$inp-background: var(--inp-background);
+$inp-border: var(--inp-border);
+$inp-placeholder: var(--inp-placeholder);
+$inp-icon: var(--inp-icon);
+
+// Buttons Variable
+$btn-text: var(--btn-text);
+$btn-background: var(--btn-background);
+$btn-border: var(--btn-border);
+$btn-hover-text: var(--btn-hover-text);
+$btn-hover-background: var(--btn-hover-background);
+$btn-hover-border: var(--btn-hover-border);
+
+// Side bar variable
 $sb-bg-color: var(--sb-bg-color);
 $sb-menu-text: var(--sb-menu-text);
 $sb-menu-icon: var(--sb-menu-icon);

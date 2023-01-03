@@ -4,9 +4,11 @@
 /* eslint-disable no-unused-expressions */
 /* eslint-disable prettier/prettier */
 import { useEffect } from 'react';
+import Bit from './components/bit/Bit';
 import Navbar from './components/navbar/Navbar';
 import Settings from './components/settings/Settings';
 import SideBar from './components/sideBar/SideBar';
+import Wrapper from './components/wrapper/Wrapper';
 import { colorPaletteV2 } from './dummy-data/color';
 
 
@@ -21,14 +23,18 @@ function App() {
 
     return (
         <>
-            <div style={{    padding: '20px', background: 'lavender', marginBottom: '20px'}}>
-                <SideBar />
-            </div>
+            <Wrapper>
+                <Bit />
+            </Wrapper>
             
-            <div style={{    padding: '20px', background: 'lavender', marginBottom: '20px'}}>
+            <Wrapper>
+                <SideBar />
+            </Wrapper>
+            
+            <Wrapper>
                 <Navbar />
                 <Settings />
-            </div>
+            </Wrapper>
         </>
 
     );

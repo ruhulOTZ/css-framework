@@ -1,0 +1,89 @@
+@import '../../assets/scss/base/variables';
+
+.bitWrapper {
+  margin-top: 20px;
+  .bitContent {
+    display: flex;
+    justify-content: space-around;
+    // gap: 50px;
+    .btn {
+      font-size: 20px;
+      padding: 15px 30px;
+      color: $btn-text;
+      background-color: $btn-background;
+      border: 5px solid $btn-border;
+      border-radius: 10px;
+      cursor: pointer;
+
+      &:hover {
+        color: $btn-hover-text;
+        background-color: $btn-hover-background;
+        border-color: $btn-hover-border;
+      }
+    }
+
+    .inputWrapper {
+      position: relative;
+      .input {
+        font-size: 20px;
+        color: $inp-text;
+        background-color: $inp-background;
+        border: 5px solid $inp-border;
+        padding: 20px 40px 20px 20px;
+        border-radius: 10px;
+        outline: none;
+        &::placeholder {
+          color: $inp-placeholder;
+        }
+      }
+      svg {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        fill: $inp-icon;
+      }
+    }
+
+    .tabs {
+      .withBg {
+        margin-bottom: 20px;
+        display: flex;
+        .item {
+          color: $tab-wb-text;
+          background-color: $tab-wb-background;
+          padding: 10px 20px;
+          cursor: pointer;
+          &:hover {
+            color: $tab-wb-active-text;
+            background-color: $tab-wb-active-background;
+          }
+          &.active {
+            color: $tab-wb-active-text;
+            background-color: $tab-wb-active-background;
+          }
+          &:first-child {
+            border-radius: 10px 0px 0px 10px;
+          }
+          &:last-child {
+            border-radius: 0px 10px 10px 0px;
+          }
+        }
+      }
+      .withoutBg {
+        display: flex;
+        gap: 20px;
+        cursor: pointer;
+        .item {
+          color: $tab-wub-text;
+          &:hover {
+            color: $tab-wub-active-text;
+          }
+          &.active {
+            color: $tab-wub-active-text;
+          }
+        }
+      }
+    }
+  }
+}
