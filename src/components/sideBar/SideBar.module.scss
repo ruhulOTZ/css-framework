@@ -1,0 +1,58 @@
+@import '../../assets/scss/base/variables';
+
+.sidebarWrapper {
+  display: grid;
+  grid-template-columns: 25% 1fr;
+  .sidebarContent {
+    background-color: $sb-bg-color;
+    .sidebarList {
+      margin-inline: 40px;
+      padding: 0;
+      list-style: none;
+      .sidebarItem {
+        font-weight: 500;
+        color: $sb-menu-text;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-block: 10px;
+        padding-left: 50px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+
+        svg {
+          path {
+            fill: $sb-menu-icon;
+          }
+        }
+
+        &.active {
+          color: $sb-menu-active-text;
+          background-color: $sb-menu-active-bg;
+
+          svg {
+            path {
+              fill: $sb-menu-active-icon;
+            }
+          }
+        }
+
+        &:hover {
+          color: $sb-menu-active-text;
+          background-color: $sb-menu-active-bg;
+
+          svg {
+            path {
+              fill: $sb-menu-active-text;
+            }
+          }
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

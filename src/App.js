@@ -6,6 +6,7 @@
 import { useEffect } from 'react';
 import Navbar from './components/navbar/Navbar';
 import Settings from './components/settings/Settings';
+import SideBar from './components/sideBar/SideBar';
 import { colorPaletteV2 } from './dummy-data/color';
 
 
@@ -19,10 +20,17 @@ function App() {
     }, []);
 
     return (
-        <div style={{    padding: '20px', background: 'lavender'}}>
-            <Navbar />
-            <Settings />
-        </div>
+        <>
+            <div style={{    padding: '20px', background: 'lavender', marginBottom: '20px'}}>
+                <SideBar />
+            </div>
+            
+            <div style={{    padding: '20px', background: 'lavender', marginBottom: '20px'}}>
+                <Navbar />
+                <Settings />
+            </div>
+        </>
+
     );
 }
 

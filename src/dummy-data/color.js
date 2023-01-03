@@ -86,4 +86,9 @@ export const colorPaletteV2 = {
     'tb-badge-text': '#000000',
     /* side bar properties */
     'sb-bg-color': '#3c7ef3',
+    'sb-menu-text': '#fff',
+    'sb-menu-icon': '#fff',
+    'sb-menu-active-text': '#000',
+    'sb-menu-active-icon': '#000',
+    'sb-menu-active-bg': '#ff264a',
 };

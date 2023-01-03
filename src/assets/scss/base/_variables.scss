@@ -17,11 +17,32 @@
 
   --tb-badge-bg: #fff;
   --tb-badge-text: #000000;
+
+  // Sidebar Code
+  --sb-bg-color: #cad345;
+  --sb-menu-text: #fff;
+  --sb-menu-icon: #fff;
+  --sb-menu-active-text: #000;
+  --sb-menu-active-icon: #000;
+  --sb-menu-active-bg: #ff264a;
 }
 
+// Side bar variable
+
+$sb-bg-color: var(--sb-bg-color);
+$sb-menu-text: var(--sb-menu-text);
+$sb-menu-icon: var(--sb-menu-icon);
+$sb-menu-active-text: var(--sb-menu-active-text);
+$sb-menu-active-icon: var(--sb-menu-active-icon);
+$sb-menu-active-bg: var(--sb-menu-active-bg);
+
+// End
+
+// Static
 $white-color: #fff;
 $black-color: #000;
 $red-color: #ff264a;
+// End
 
 // Top bar variable
 
