@@ -4,12 +4,7 @@
 /* eslint-disable no-unused-expressions */
 /* eslint-disable prettier/prettier */
 import { useEffect } from 'react';
-import Bit from './components/bit/Bit';
-import General from './components/general/General';
-import Navbar from './components/navbar/Navbar';
-import NavbarSettings from './components/navbar/navbarSettings/NavbarSettings';
-import SideBar from './components/sideBar/SideBar';
-import Wrapper from './components/wrapper/Wrapper';
+import Home from './components/pages/theming/Home';
 import { colorPaletteV2 } from './dummy-data/color';
 
 
@@ -23,23 +18,7 @@ function App() {
     }, []);
 
     return (
-        <>
-            <Wrapper>
-                <General />
-            </Wrapper>
-            <Wrapper>
-                <Bit />
-            </Wrapper>
-            
-            <Wrapper>
-                <SideBar />
-            </Wrapper>
-            
-            <Wrapper>
-                <Navbar />
-                <NavbarSettings />
-            </Wrapper>
-        </>
+        <Home />
 
     );
 }
