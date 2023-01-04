@@ -22,6 +22,13 @@ function GeneralSetting() {
                 document.documentElement.style.setProperty('--accent-color', event.target.value);
                 break;
 
+            case 'generalBg':
+                document.documentElement.style.setProperty(
+                    '--main-background-color',
+                    event.target.value
+                );
+                break;
+
             default:
                 break;
         }
@@ -45,6 +52,11 @@ function GeneralSetting() {
                     <div className={Styles.dynamicColorItem}>
                         <span>Accent Text</span>
                         <input type="color" onChange={event => handleColor('accentText', event)} />
+                    </div>
+
+                    <div className={Styles.dynamicColorItem}>
+                        <span>Main Background</span>
+                        <input type="color" onChange={event => handleColor('generalBg', event)} />
                     </div>
                 </div>
             </div>

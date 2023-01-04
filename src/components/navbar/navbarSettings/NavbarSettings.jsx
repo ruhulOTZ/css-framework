@@ -1,7 +1,7 @@
 import React from 'react';
-import Styles from './Settings.module.scss';
+import Styles from './NavbarSettings.module.scss';
 
-function Settings() {
+function NavbarSettings() {
     const handleColor = (color, event) => {
         switch (color) {
             case 'navBarText':
@@ -165,4 +165,4 @@ function Settings() {
     );
 }
 
-export default Settings;
+export default NavbarSettings;

@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 import Bit from './components/bit/Bit';
 import General from './components/general/General';
 import Navbar from './components/navbar/Navbar';
-import Settings from './components/settings/Settings';
+import NavbarSettings from './components/navbar/navbarSettings/NavbarSettings';
 import SideBar from './components/sideBar/SideBar';
 import Wrapper from './components/wrapper/Wrapper';
 import { colorPaletteV2 } from './dummy-data/color';
@@ -37,7 +37,7 @@ function App() {
             
             <Wrapper>
                 <Navbar />
-                <Settings />
+                <NavbarSettings />
             </Wrapper>
         </>
 
