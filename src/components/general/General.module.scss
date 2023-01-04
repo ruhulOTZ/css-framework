@@ -1,0 +1,13 @@
+@import '../../assets/scss/base/variables';
+
+.generalWrapper {
+  .primary {
+    color: $primary-text-color;
+  }
+  .secondary {
+    color: $secondary-text-color;
+  }
+  .accent {
+    color: $accent-color;
+  }
+}

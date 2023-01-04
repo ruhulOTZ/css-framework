@@ -5,6 +5,7 @@
 /* eslint-disable prettier/prettier */
 import { useEffect } from 'react';
 import Bit from './components/bit/Bit';
+import General from './components/general/General';
 import Navbar from './components/navbar/Navbar';
 import Settings from './components/settings/Settings';
 import SideBar from './components/sideBar/SideBar';
@@ -23,6 +24,9 @@ function App() {
 
     return (
         <>
+            <Wrapper>
+                <General />
+            </Wrapper>
             <Wrapper>
                 <Bit />
             </Wrapper>

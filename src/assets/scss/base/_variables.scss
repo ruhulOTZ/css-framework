@@ -51,7 +51,7 @@
   --scroll-color: #0025db;
   --primary-text-color: #00000;
   --secondary-text-color: #ff264a;
-  // --accent-color:,
+  --accent-color: #de26ff;
 }
 
 // General
@@ -59,6 +59,7 @@ $main-background-color: var(--main-background-color);
 $scroll-color: var(--scroll-color);
 $primary-text-color: var(--primary-text-color);
 $secondary-text-color: var(--secondary-text-color);
+$accent-color: var(--accent-color);
 
 // Tabs
 $tab-wb-text: var(--tab-wb-text);
